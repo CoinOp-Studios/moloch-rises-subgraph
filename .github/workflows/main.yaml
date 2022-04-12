@@ -23,6 +23,5 @@ jobs:
         with:
           graph_access_token: ${{secrets.GRAPH_ACCESS_TOKEN}}
           graph_subgraph_name: 'moloch-rises-subgraph'
-          graph_deploy_studio: 'false'
           graph_account: '0xBeeDao'
           graph_config_file: 'subgraph.yaml'
