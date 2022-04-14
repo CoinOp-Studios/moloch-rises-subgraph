@@ -7,7 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: TheGraphDeployments
+    environment: production
     steps:
       - uses: actions/checkout@v2
       - name: Install node
@@ -22,5 +22,5 @@ jobs:
         run: yarn build
       - name: deploy
         run: |
-          echo "${ secrets.GRAPH_ACCESS_TOKEN }"
+          echo "${{ secrets.GRAPH_ACCESS_TOKEN }}"
           yarn deploy-with-token ${{ secrets.GRAPH_ACCESS_TOKEN }}
