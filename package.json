@@ -4,7 +4,7 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "auth": "graph auth --product hosted-service",
+    "auth": "graph auth --product hosted-service 0xBeeDao/moloch-rises-subgraph",
     "deploy": "graph deploy --product hosted-service 0xBeeDao/moloch-rises-subgraph",
     "create-local": "graph create --node http://localhost:8020/ moloch-rises-subgraph",
     "remove-local": "graph remove --node http://localhost:8020/ moloch-rises-subgraph",
