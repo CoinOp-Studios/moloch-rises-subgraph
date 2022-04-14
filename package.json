@@ -6,6 +6,7 @@
     "build": "graph build",
     "auth": "graph auth --product hosted-service 0xBeeDao/moloch-rises-subgraph",
     "deploy": "graph deploy --product hosted-service 0xBeeDao/moloch-rises-subgraph",
+    "deploy-with-token": "graph deploy 0xBeeDao/moloch-rises-subgraph subgraph.yaml --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ --access-token=",
     "create-local": "graph create --node http://localhost:8020/ moloch-rises-subgraph",
     "remove-local": "graph remove --node http://localhost:8020/ moloch-rises-subgraph",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 moloch-rises-subgraph"

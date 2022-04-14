@@ -20,6 +20,4 @@ jobs:
       - name: Build
         run: yarn build
       - name: deploy
-        run: |
-          yarn auth ${{ secrets.GRAPH_ACCESS_TOKEN }}
-          yarn deploy
+        run: yarn deploy-with-token ${{ secrets.GRAPH_ACCESS_TOKEN }}
