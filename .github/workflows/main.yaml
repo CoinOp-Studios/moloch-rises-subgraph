@@ -20,4 +20,6 @@ jobs:
       - name: Build
         run: yarn build
       - name: deploy
-        run: yarn deploy-with-token ${{ secrets.GRAPH_ACCESS_TOKEN }}
+        run: |
+          echo "${ secrets.GRAPH_ACCESS_TOKEN }"
+          yarn deploy-with-token ${{ secrets.GRAPH_ACCESS_TOKEN }}
